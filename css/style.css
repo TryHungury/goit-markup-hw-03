@@ -46,7 +46,22 @@
     font-style: normal;
     font-display: swap;
 } */
+/* Загальне забирання марджинів */
 
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Normalize */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.margin-on {
+    margin-right: 50px;
+}
 /* Змінні */
 :root {
     --color-primary: #212121;
@@ -65,6 +80,15 @@
 
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-secondary: 'Raleway', sans-serif;
+}
+/* Контейнер */
+.container {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.flex-box {
+    display: flex;
 }
 
 /* Властивості на все тіло */
@@ -85,7 +109,7 @@ a {
     text-decoration: none;
 }
 
-/* Шрифт лого */
+/* Лого */
 .logo {
     font-family: var(--font-family-secondary);
     font-size: 26px;
@@ -97,13 +121,25 @@ a {
 .header-page {
     background-color: var(--color-background-other);
 }
-
+.header-page .flex-box {
+    justify-content: space-between;
+}
+.header-left .nav-list,
+.header-left, .data-list,
+.data-list .link {
+    display: flex;
+    align-items: center;
+}
+ 
 /* Лого хедер */
 .header-page .logo-first-half {
     color: var(--color-accent);
 }
 .header-page .logo-secondary-half {
     color: var(--color-third);
+}
+.header-page .logo {
+    margin-right: 93px;
 }
 
 /* Навігація та особисті дані*/
@@ -117,7 +153,9 @@ a {
 
 /* Лише навігація */
 .nav-list .link {
-    color: var(--color-primary);   
+    color: var(--color-primary);  
+    padding: 8px;
+    
 } 
 
 /* Ховер, фокус */
@@ -129,6 +167,7 @@ a {
 /* Лише особисті дані */
 .data-list .link{
     color: var(--color-secondary);
+    padding: 8px;
 }
 
 /* Ховер, фокус */
