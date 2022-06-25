@@ -1,0 +1,294 @@
+/* Шрифти
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway') 
+        url('Raleway-Bold.woff2') format('woff2'),
+        url('Raleway-Bold.woff') format('woff'),
+        url('Raleway-Bold.ttf') format('truetype'),
+        url('Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto') 
+        url('Roboto-Bold.woff2') format('woff2'),
+        url('Roboto-Bold.woff') format('woff'),
+        url('Roboto-Bold.ttf') format('truetype'),
+        url('Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto') 
+        url('Roboto-Regular.woff2') format('woff2'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype'),
+        url('Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto') 
+        url('Roboto-Medium.woff2') format('woff2'),
+        url('Roboto-Medium.woff') format('woff'),
+        url('Roboto-Medium.ttf') format('truetype'),
+        url('Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+} */
+
+/* Змінні */
+:root {
+    --color-primary: #212121;
+    --color-secondary: #757575;
+    --color-third: #000000;
+    --color-accent: #2196F3;
+    --color-other: #ffffff;
+    --color-alfa: #ffffff85;
+    
+    --color-background-primary: #E5E5E5;
+    --color-background-secondary: #2F303A;
+    --color-background-third: #F5F4FA;
+    --color-background-accent: #2196F3;
+    --color-background-other: #ffffff;
+    
+
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Raleway', sans-serif;
+}
+
+/* Властивості на все тіло */
+body {
+    color: var(--color-primary);
+    font-family: var(--font-family-primary);
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+/* Відключення стилю лішок */
+li {
+    list-style-type: none;
+}
+
+/* Відключення стилю посилань */
+a {
+    text-decoration: none;
+}
+
+/* Шрифт лого */
+.logo {
+    font-family: var(--font-family-secondary);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* Хедер */
+.header-page {
+    background-color: var(--color-background-other);
+}
+
+/* Лого хедер */
+.header-page .logo-first-half {
+    color: var(--color-accent);
+}
+.header-page .logo-secondary-half {
+    color: var(--color-third);
+}
+
+/* Навігація та особисті дані*/
+.nav-list,
+.data-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* Лише навігація */
+.nav-list .link {
+    color: var(--color-primary);   
+} 
+
+/* Ховер, фокус */
+.nav-list .link:hover,
+.nav-list .link:focus {
+    color: var(--color-accent);
+}
+
+/* Лише особисті дані */
+.data-list .link{
+    color: var(--color-secondary);
+}
+
+/* Ховер, фокус */
+.data-list .link:hover,
+.data-list .link:focus {
+    color: var(--color-accent);
+}
+
+/* Мейн */
+main {
+    background-color: var(--color-background-primary);
+}
+
+/* Заголовки Головна сторінка  */
+.title-main {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em
+}
+
+/* Герой */
+.hero {
+    background-color: var(--color-background-secondary);
+}
+.hero-title {
+    color: var(--color-other);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.hero-button {
+    color: var(--color-other);
+    background-color: var(--color-background-accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer
+}
+
+/* Ховер */
+.hero-button:hover {
+    opacity: 0.8;
+}
+
+/* Заховані заголовки */
+.hidden-title {
+    opacity: 0;
+}
+
+/* Наші переваги */
+.subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.subtitle-text {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.section-our-team {
+    background-color: var(--color-background-third);
+}
+.title-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.text-employment {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Секція наші пропозиції */
+/* Кнопки фільтри */
+.button-filter {
+    background-color: var(--color-background-third);
+    color: var(--color-primary);
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62; 
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer
+}
+
+/* Ховер, фокус */
+.button-filter:hover,
+.button-filter:focus {
+    background-color: var(--color-background-accent);
+    color: var(--color-other);
+}
+
+/* Заголовки сторінка портфоліо */
+.title-portfolio {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+/* Параграфи сторінки портфоліо */
+.text-portfolio {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* Футер */
+.footer-page {
+    background-color: var(--color-background-secondary);
+}
+
+/* Лого футер */
+.footer-page .logo-first-half {
+    color: var(--color-accent);
+}
+.footer-page .logo-secondary-half {
+    color: var(--color-background-other);
+}
+
+/* Адрес футер */
+.footer-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.text-address {
+    color: var(--color-background-other);
+    font-style: normal;
+}
+.link-address {
+    color: var(--color-alfa);
+    font-style: normal;
+}
+
+/* Ховер, фокус */
+.link-address:hover,
+.link-address:focus {
+    color: var(--color-accent);
+}
