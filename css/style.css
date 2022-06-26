@@ -318,7 +318,9 @@ main {
     line-height: 1.62; 
     text-align: center;
     letter-spacing: 0.03em;
-    cursor: pointer
+    cursor: pointer;
+    border: solid var(--color-background-third) 1px;
+    border-radius: 4px;
 }
 
 /* Ховер, фокус */
@@ -326,6 +328,7 @@ main {
 .button-filter:focus {
     background-color: var(--color-background-accent);
     color: var(--color-other);
+    border: solid var(--color-background-accent) 1px;
 }
 /* Портфоліо */
 
