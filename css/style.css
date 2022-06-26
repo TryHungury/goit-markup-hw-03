@@ -329,6 +329,7 @@ main {
     background-color: var(--color-background-accent);
     color: var(--color-other);
     border: solid var(--color-background-accent) 1px;
+    box-shadow: 0px 1px 3px var(--color-secondary);
 }
 /* Портфоліо */
 
