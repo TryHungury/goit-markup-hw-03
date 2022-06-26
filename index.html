@@ -33,8 +33,10 @@
           <!-- Навігація -->
           <nav>
             <ul class="nav-list">
-              <li><a class="link margin-on" href="./index.html">Студия</a></li>
-              <li><a class="link margin-on" href="./portfolio.html">Портфолио</a></li>
+              <li><a class="link margin-on-header" href="./index.html">Студия</a></li>
+              <li>
+                <a class="link margin-on-header" href="./portfolio.html">Портфолио</a>
+              </li>
               <li><a class="link" href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -43,7 +45,7 @@
         <div class="header-right">
           <ul class="data-list">
             <li>
-              <a class="link margin-on" href="mailto:info@devstudio.com"
+              <a class="link margin-on-header" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
@@ -57,32 +59,34 @@
     <!-- Унікальний вміст -->
     <main>
       <!-- Герой -->
+
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-button flex-box" type="button">Заказать услугу</button>
+        </div>
       </section>
+
       <!-- Наші переваги -->
       <section>
-        <h2 class="hidden-title">Нашы преимущества</h2>
-        <ul>
-          <li>
+        <h2 hidden class="hidden-title">Нашы преимущества</h2>
+        <div class="container">
+          <ul class="list-benefits">
+          <li class="margin-on-list">
             <h3 class="subtitle">Внимание к деталям</h3>
             <p class="subtitle-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="margin-on-list">
             <h3 class="subtitle">Пунктуальность</h3>
             <p class="subtitle-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="margin-on-list">
             <h3 class="subtitle">Планирование</h3>
             <p class="subtitle-text">
               Равным образом консультация с широким активом в значительной
@@ -97,11 +101,13 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- Чим ми займаємось -->
-      <section>
-        <h2 class="title-main">Чем мы занимаемся</h2>
-        <ul>
+      <section class="what-we-do">
+        <div class="container">
+          <h2 class="title-main">Чем мы занимаемся</h2>
+        <ul class="flex-box">
           <li>
             <img
               src="./images/photo-main/what-we-doing/coding.jpg"
@@ -124,12 +130,14 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- Наша команда -->
       <section class="section-our-team">
-        <h2 class="title-main">Наша команда</h2>
-        <ul>
-          <li>
+        <div class="container">
+          <h2 class="title-main">Наша команда</h2>
+        <ul class="flex-box">
+          <li class="our-team-box">
             <img
               src="./images/photo-main/ours-team/photo-igor.jpg"
               width="270"
@@ -138,7 +146,7 @@
             <h3 class="title-name">Игорь Демьяненко</h3>
             <p class="text-employment">Product Designer</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/photo-main/ours-team/photo-olga.jpg"
               width="270"
@@ -147,7 +155,7 @@
             <h3 class="title-name">Ольга Репина</h3>
             <p class="text-employment">Frontend Developer</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/photo-main/ours-team/photo-nikolay.jpg"
               width="270"
@@ -156,7 +164,7 @@
             <h3 class="title-name">Николай Тарасов</h3>
             <p class="text-employment">Marketing</p>
           </li>
-          <li>
+          <li class="our-team-box">
             <img
               src="./images/photo-main/ours-team/photo-mihail.jpg"
               width="270"
@@ -167,22 +175,25 @@
           </li>
         </ul>
       </section>
+        </div>
     </main>
     <!-- Підвал -->
     <footer class="footer-page">
-      <!-- Логотип -->
+      <div class="container">
+              <!-- Логотип -->
       <a class="logo" href="./index.html"
-        ><span class="logo-first-half">Web</span
-        ><span class="logo-secondary-half">Studi</span></a
+      ><span class="logo-first-half">Web</span
+      ><span class="logo-secondary-half">Studi</span></a
+    >
+    <!-- Адрес -->
+    <address class="footer-address">
+      <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
+      <a class="link-address" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
       >
-      <!-- Адрес -->
-      <address class="footer-address">
-        <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
-        <a class="link-address" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="link-address" href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+      <a class="link-address" href="tel:+380961111111">+38 096 111 11 11</a>
+    </address>
+      </div>
     </footer>
   </body>
 </html>

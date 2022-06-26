@@ -59,8 +59,11 @@ h1,h2,h3,h4,h5,h6,p,ul {
 *::after {
     box-sizing: border-box;
 }
-.margin-on {
+.margin-on-header {
     margin-right: 50px;
+}
+.margin-on-list {
+    margin-right: 30px;
 }
 /* Змінні */
 :root {
@@ -130,6 +133,10 @@ a {
     display: flex;
     align-items: center;
 }
+.header-left, .header-right {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
  
 /* Лого хедер */
 .header-page .logo-first-half {
@@ -187,12 +194,13 @@ main {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em
+    letter-spacing: 0.03em;
 }
 
 /* Герой */
 .hero {
     background-color: var(--color-background-secondary);
+    height: 600px;
 }
 .hero-title {
     color: var(--color-other);
@@ -202,6 +210,10 @@ main {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    width: 696px;
+    margin: 0 auto;
+    padding-top: 200px;
+    margin-bottom: 30px;
 }
 .hero-button {
     color: var(--color-other);
@@ -210,7 +222,12 @@ main {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    cursor: pointer
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border: var(--color-accent);
+    
 }
 
 /* Ховер */
@@ -218,10 +235,10 @@ main {
     opacity: 0.8;
 }
 
-/* Заховані заголовки */
+/* Заховані заголовки
 .hidden-title {
     opacity: 0;
-}
+} */
 
 /* Наші переваги */
 .subtitle {
@@ -237,6 +254,20 @@ main {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.list-benefits {
+    min-width: 270px;
+    display: inline-flex;
+    padding: 94px 0;
+
+}
+/* Чим ми займаємось */
+.what-we-do .flex-box{
+    justify-content: space-between;
+    margin-bottom: 94px;
+}
+.what-we-do .title-main {
+    margin-bottom: 50px;
 }
 
 /* Наша команда */
@@ -257,6 +288,20 @@ main {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+}
+.section-our-team .title-main {
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+.section-our-team .flex-box{
+    justify-content: space-between;
+}
+.our-team-box {
+    background-color: var(--color-background-other);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 0px var(--color-secondary)
 }
 
 /* Секція наші пропозиції */
@@ -300,6 +345,7 @@ main {
 /* Футер */
 .footer-page {
     background-color: var(--color-background-secondary);
+    padding: 60px 0;
 }
 
 /* Лого футер */
@@ -309,22 +355,32 @@ main {
 .footer-page .logo-secondary-half {
     color: var(--color-background-other);
 }
+.footer-page .logo {
+    display: block;
+    margin-bottom: 20px;
+}
 
 /* Адрес футер */
 .footer-address {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 231px; */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em; 
 }
 .text-address {
     color: var(--color-background-other);
     font-style: normal;
+    padding-bottom: 9px;
 }
 .link-address {
     color: var(--color-alfa);
     font-style: normal;
+    padding-bottom: 9px;
 }
+
 
 /* Ховер, фокус */
 .link-address:hover,
