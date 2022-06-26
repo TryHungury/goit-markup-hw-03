@@ -124,6 +124,7 @@ a {
 /* Хедер */
 .header-page {
     background-color: var(--color-background-other);
+    border-bottom: 1px solid #ECECEC;
 }
 .header-page .flex-box {
     justify-content: space-between;
