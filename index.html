@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -59,39 +59,39 @@
     <!-- Унікальний вміст -->
     <main>
       <!-- Герой -->
-      <section class="hero">
-        <div class="container">
+      <div class="hero">
+        <section class="container container-details">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-button flex-box" type="button">Заказать услугу</button>
-        </div>
       </section>
+      </div>
       <!-- Наші переваги -->
-      <section>
+      <div class="container">
+      <section class="container-default-padding">
         <h2 hidden class="hidden-title">Нашы преимущества</h2>
-        <div class="container">
-          <ul class="list-benefits">
-          <li class="margin-on-list">
+          <ul class="list-benefits flex-box">
+          <li class="margin-on-list width-list">
             <h3 class="subtitle">Внимание к деталям</h3>
             <p class="subtitle-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="margin-on-list">
+          <li class="margin-on-list width-list">
             <h3 class="subtitle">Пунктуальность</h3>
             <p class="subtitle-text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="margin-on-list">
+          <li class="margin-on-list width-list">
             <h3 class="subtitle">Планирование</h3>
             <p class="subtitle-text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="width-list">
             <h3 class="subtitle">Современные технологии</h3>
             <p class="subtitle-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -102,8 +102,8 @@
       </div>
       </section>
       <!-- Чим ми займаємось -->
+      <div class="container">
       <section class="what-we-do">
-        <div class="container">
           <h2 class="title-main">Чем мы занимаемся</h2>
         <ul class="flex-box">
           <li>
@@ -131,49 +131,57 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="section-our-team">
-        <div class="container">
-          <h2 class="title-main">Наша команда</h2>
-        <ul class="flex-box">
-          <li class="our-team-box">
-            <img
+      <div class="section-our-team">
+        <section class="container-our-team container-default-padding">
+            <h2 class="title-main">Наша команда</h2>
+          <ul class="flex-box">
+            <li class="our-team-box">
+              <img
               src="./images/photo-main/ours-team/photo-igor.jpg"
               width="270"
               alt="Фото Игоря"
-            />
-            <h3 class="title-name">Игорь Демьяненко</h3>
-            <p class="text-employment">Product Designer</p>
-          </li>
-          <li class="our-team-box">
-            <img
-              src="./images/photo-main/ours-team/photo-olga.jpg"
-              width="270"
-              alt="Фото Ольги"
-            />
-            <h3 class="title-name">Ольга Репина</h3>
-            <p class="text-employment">Frontend Developer</p>
-          </li>
-          <li class="our-team-box">
-            <img
-              src="./images/photo-main/ours-team/photo-nikolay.jpg"
-              width="270"
-              alt="Фото Николая"
-            />
-            <h3 class="title-name">Николай Тарасов</h3>
-            <p class="text-employment">Marketing</p>
-          </li>
-          <li class="our-team-box">
-            <img
-              src="./images/photo-main/ours-team/photo-mihail.jpg"
-              width="270"
-              alt="Фото Михаила"
-            />
-            <h3 class="title-name">Михаил Ермаков</h3>
-            <p class="text-employment">UI Designer</p>
-          </li>
-        </ul>
-      </section>
-        </div>
+              />
+              <div class="our-team-decorate">
+                <h3 class="title-name">Игорь Демьяненко</h3>
+                <p class="text-employment">Product Designer</p>
+              </div>
+              </li>
+              <li class="our-team-box">
+                <img
+                src="./images/photo-main/ours-team/photo-olga.jpg"
+                width="270"
+                alt="Фото Ольги"
+                />
+                <div class="our-team-decorate">
+                <h3 class="title-name">Ольга Репина</h3>
+                <p class="text-employment">Frontend Developer</p>
+              </div>
+              </li>
+              <li class="our-team-box">
+                <img
+                src="./images/photo-main/ours-team/photo-nikolay.jpg"
+                width="270"
+                alt="Фото Николая"
+                />
+                <div class="our-team-decorate">
+                <h3 class="title-name">Николай Тарасов</h3>
+                <p class="text-employment">Marketing</p>
+              </div>
+              </li>
+              <li class="our-team-box">
+                <img
+                src="./images/photo-main/ours-team/photo-mihail.jpg"
+                width="270"
+                alt="Фото Михаила"
+                />
+                <div class="our-team-decorate">
+                <h3 class="title-name">Михаил Ермаков</h3>
+                <p class="text-employment">UI Designer</p>
+              </div>
+              </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <!-- Підвал -->
     <footer class="footer-page">
@@ -185,8 +193,8 @@
     >
     <!-- Адрес -->
     <address class="footer-address">
-      <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
-      <a class="link-address" href="mailto:info@devstudio.com"
+      <p class="text-address margin-on-footer">г. Киев, пр-т Леси Украинки, 26</p>
+      <a class="link-address margin-on-footer" href="mailto:info@devstudio.com"
         >info@devstudio.com</a
       >
       <a class="link-address" href="tel:+380961111111">+38 096 111 11 11</a>
